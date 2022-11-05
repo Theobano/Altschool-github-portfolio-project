@@ -1,0 +1,34 @@
+.repo{
+    flex:1;
+    
+    min-width: 50%;
+    border-left: 1px solid var(--shadow-color);
+    padding: 1em;
+    overflow: auto;
+}
+.repo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.show-repo{
+    overflow: auto;
+}
+
+.readme{
+    border: 1px solid var(--shadow-color);
+    border-radius: .5em;
+}
+.readme>*{
+    
+    padding: 1em;
+}
+
+.readme h1, h2, h3, h4, h5, h6{
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.title-readme{
+    border-bottom: 1px solid var(--shadow-color);;
+}

@@ -1,0 +1,87 @@
+.navigation {
+    padding: 1em;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  transition: all 0.3s ease 0s;
+  transform: translateX(-100%) translateY(0) rotate(0) skewX(0) skewY(0)
+    scaleX(1) scaleY(1);
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 5px 1px var(--shadow-color);
+
+}
+
+.navigation > ul {
+  list-style: none;
+  margin: 0;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+.navigation li {
+  width: 100%;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--color-tertiary2);
+  font-weight: bold;
+  font-size: large;
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  transition: all 0.3s ease 0s;
+}
+
+.navigation li:first-child a {
+  font-size: 1.5em;
+}
+
+.navigation a:hover {
+  background-color: var(--primary-color);
+}
+
+.navigation a.active{
+  background-color: var(--shadow-color);
+
+}
+
+
+
+
+
+.show-navigation {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  width: 18rem;
+
+  transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1)
+    scaleY(1);
+  visibility: visible;
+  overflow: auto;
+  opacity: 1;
+}
+
+.navigation .hamburger-container{
+    display: flex;
+    justify-content: flex-end;
+}

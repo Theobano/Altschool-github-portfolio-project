@@ -1,0 +1,13 @@
+.error-fallback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.error-fallback h1,
+h2 {
+  margin: 0;
+}

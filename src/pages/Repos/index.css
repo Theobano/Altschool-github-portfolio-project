@@ -1,0 +1,32 @@
+.repos-page{
+    flex: none;
+}
+.repocards-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.repos{
+    padding: 2em;
+    display: flex;
+    gap: 1em;
+}
+.show-repos{
+    max-height: 75vh;
+
+}
+
+::-webkit-scrollbar{
+    width: .3em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--text-color);
+}

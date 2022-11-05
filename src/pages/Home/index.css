@@ -1,0 +1,9 @@
+.bio-container{
+    padding: 1em;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.bio-container img{
+    border-radius: 50%;
+}
