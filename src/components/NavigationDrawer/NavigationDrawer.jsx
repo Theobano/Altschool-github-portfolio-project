@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { navigationContext } from "../../contexts";
 import HamburgerButton from "../HamburgerButton/HamburgerButton";
@@ -6,11 +6,7 @@ import ToggleThemeButton from "../ToggleThemeButton";
 import "./NavigationDrawer.css";
 
 function NavigationDrawer() {
-  const [navIsOpen, setNavIsOpen] = useContext(navigationContext);
-
-  // useEffect(() => {
-
-  // })
+  const [navIsOpen] = useContext(navigationContext);
 
   return (
     <div className={`navigation  ${navIsOpen ? "show-navigation" : ""}`}>
@@ -23,7 +19,7 @@ function NavigationDrawer() {
         <NavLink to={"/testerror"}>Test Error</NavLink>
       </div>
       <div>
-        <ToggleThemeButton/>
+        <ToggleThemeButton />
       </div>
     </div>
   );

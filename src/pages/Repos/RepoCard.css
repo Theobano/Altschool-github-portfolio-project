@@ -1,37 +1,37 @@
-.repocard{
-    padding: 1em;
-    text-decoration: none;
-    color: var(--text-color);
-    border-top: 1px solid var(--shadow-color);
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+.repocard {
+  padding: 1em;
+  text-decoration: none;
+  color: var(--text-color);
+  border-top: 1px solid var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
-.repocard.active{
-    background-color: var(--secondary-color);
+.repocard.active {
+  background-color: var(--secondary-color);
 }
-.repocard:last-child{
-    border-bottom: 1px solid var(--shadow-color);
-}
-
-.repo-name-visib{
-    gap:1em;
+.repocard:last-child {
+  border-bottom: 1px solid var(--shadow-color);
 }
 
-.repo-name{
-    font-size: larger;
-    font-weight: bold;
-}
-.repo-visibility{
-    font-size: small;
-}
-.repo-descr{
-    margin-top: .5em;
+.repo-name-visib {
+  gap: 1em;
 }
 
-.repo-meta{
-    display: flex;
-    font-size: small;
-    gap: 1.5em;
+.repo-name {
+  font-size: larger;
+  font-weight: bold;
+}
+.repo-visibility {
+  font-size: small;
+}
+.repo-descr {
+  margin-top: 0.5em;
+}
+
+.repo-meta {
+  display: flex;
+  font-size: small;
+  gap: 1.5em;
 }

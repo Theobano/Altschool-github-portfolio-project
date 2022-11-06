@@ -4,8 +4,8 @@ import "./index.css";
 
 function NotFound() {
   return (
-      <div className="center">
-          <Helmet>
+    <div className="center">
+      <Helmet>
         <title>Page not found</title>
       </Helmet>
       <div className="not-found">

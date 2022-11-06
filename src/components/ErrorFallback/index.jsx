@@ -4,8 +4,8 @@ import "./index.css";
 
 function ErrorFallback({ error, resetErrorBoundary }) {
   return (
-      <div className="center">
-          <Helmet>
+    <div className="center">
+      <Helmet>
         <title>Error - Theobano</title>
       </Helmet>
       <div className="error-fallback" role="alert">

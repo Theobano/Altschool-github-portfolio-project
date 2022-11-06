@@ -41,7 +41,9 @@ function Repo() {
           <div className="readme">
             <div className="title-readme">README.md</div>
             <div>
-                <ReactMarkdown rehypePlugins={[rehypeRaw]}>{readme}</ReactMarkdown>
+              <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                {readme}
+              </ReactMarkdown>
             </div>
           </div>
         </div>

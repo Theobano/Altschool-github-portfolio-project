@@ -24,17 +24,16 @@ function Repos() {
   const param = useParams();
 
   return (
-    <div 
-    className={`repos-page ${
-      Object.keys(param).length !== 0 ? "show-repos" : ""
-    }`}>
+    <div
+      className={`repos-page ${
+        Object.keys(param).length !== 0 ? "show-repos" : ""
+      }`}
+    >
       <Helmet>
         <title>Repositories - Theobano</title>
       </Helmet>
       <h1>Repositories</h1>
-      <div
-        className={`repos`}
-      >
+      <div className={`repos`}>
         <div className="repocards-container">
           {repoCards.slice(skip, skip + pageSize)}
           <div className="center">

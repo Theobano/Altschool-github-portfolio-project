@@ -12,10 +12,10 @@ body {
 }
 
 .App {
-  --primary-color: rgb(240,248,255);
-  --secondary-color: rgb(123,104,238);
-  --text-color: rgb(30,30,50);;
-  --shadow-color: rgb(106,90,205);
+  --primary-color: rgb(240, 248, 255);
+  --secondary-color: rgb(123, 104, 238);
+  --text-color: rgb(30, 30, 50);
+  --shadow-color: rgb(106, 90, 205);
 
   height: 100%;
   flex: 1;
@@ -25,48 +25,51 @@ body {
   color: var(--text-color);
   overflow: auto;
 }
-.dark{
-  --primary-color: rgb(40,40,40);
-  --secondary-color: rgb(30,30,50);
-  --text-color: rgb(200,200,200);
-  --shadow-color: rgb(50,50,70);
+.dark {
+  --primary-color: rgb(40, 40, 40);
+  --secondary-color: rgb(30, 30, 50);
+  --text-color: rgb(200, 200, 200);
+  --shadow-color: rgb(50, 50, 70);
 }
 
-.center{
+.center {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.horizontal-flex{
+.horizontal-flex {
   display: flex;
 }
-.space-between{
+.space-between {
   justify-content: space-between;
 }
 
-button, .button{
+button,
+.button {
   background-color: var(--secondary-color);
   color: var(--text-color);
   border: none;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   font-size: large;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-button:hover, .button:hover{
+button:hover,
+.button:hover {
   background-color: var(--text-color);
   color: var(--secondary-color);
 }
 
-button:active, .button:active{
+button:active,
+.button:active {
   box-shadow: inset 1px 1px 1px 1px var(--secondary-color);
   /* color: var(--text-color); */
 }
 
-a.button{
+a.button {
   text-decoration: none;
 }

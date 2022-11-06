@@ -27,13 +27,29 @@ function App() {
         </navigationContext.Provider>
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route index element={<Home />} />
-            <Route path="/repos" element={<Repos />}>
+            <Route
+              index
+              element={
+                <ErrorBoundary FallbackComponent={ErrorFallback}>
+                  <Home />
+                </ErrorBoundary>
+              }
+            />
+            <Route
+              path="/repos"
+              element={
+                <ErrorBoundary FallbackComponent={ErrorFallback}>
+                  <Repos />
+                </ErrorBoundary>
+              }
+            >
               <Route
                 path="/repos/:repoName"
                 element={
                   <Suspense fallback={<Loader />}>
-                    <Repo />
+                    <ErrorBoundary FallbackComponent={ErrorFallback}>
+                      <Repo />
+                    </ErrorBoundary>
                   </Suspense>
                 }
               />

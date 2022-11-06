@@ -4,7 +4,7 @@ function fetchGithubUser() {
   const url = new URL("/users/theobano", githubBaseUrl);
 
   const promise = fetch(url).then((res) => res.json());
-  return (promise);
+  return promise;
 }
 
 export default fetchGithubUser;

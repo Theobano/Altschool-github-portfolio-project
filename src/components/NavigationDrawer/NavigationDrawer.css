@@ -1,5 +1,5 @@
 .navigation {
-    padding: 1em;
+  padding: 1em;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -15,9 +15,7 @@
   opacity: 0;
   background-color: var(--secondary-color);
   box-shadow: 1px 1px 5px 1px var(--shadow-color);
-
 }
-
 
 .navigation a {
   text-decoration: none;
@@ -33,26 +31,19 @@
   transition: all 0.3s ease 0s;
 }
 
-
-
 .navigation a:hover {
   background-color: var(--primary-color);
 }
 
-.navigation a.active{
+.navigation a.active {
   background-color: var(--shadow-color);
-
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   flex-direction: column;
-  gap: .3em;
+  gap: 0.3em;
 }
-
-
-
-
 
 .show-navigation {
   position: fixed;
@@ -73,7 +64,7 @@
   opacity: 1;
 }
 
-.navigation .hamburger-container{
-    display: flex;
-    justify-content: flex-end;
+.navigation .hamburger-container {
+  display: flex;
+  justify-content: flex-end;
 }

@@ -29,7 +29,7 @@ function wrapPromise(promise) {
         return response;
     }
   }
-    return { read };
+  return { read };
 }
 
 export default wrapPromise;

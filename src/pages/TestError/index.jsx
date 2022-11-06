@@ -9,8 +9,8 @@ function TestError() {
   }
 
   return (
-      <div className="center">
-          <Helmet>
+    <div className="center">
+      <Helmet>
         <title>Test Error - Theobano</title>
       </Helmet>
       <div className="test-error">

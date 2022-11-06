@@ -1,11 +1,12 @@
-.not-found{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .5em;
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
 }
 
-.not-found h1,h2{
-    margin: 0;
+.not-found h1,
+h2 {
+  margin: 0;
 }
