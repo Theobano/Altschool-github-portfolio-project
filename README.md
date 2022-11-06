@@ -1,3 +1,9 @@
+# Description
+This project is a webapp developed with React.js to display my github repositories.
+
+# Hosting
+The project was hosted on Vercel. Click <a href="https://altschool-github-portfolio-project.vercel.app/">here</a> to visit the page. If that did not work, paste this link in your browser https://altschool-github-portfolio-project.vercel.app/.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

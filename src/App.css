@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -7,19 +8,28 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .App {
-  --primary-color: rgb(40,40,40);
-  --secondary-color: rgb(30,30,50);
-  --text-color: rgb(200,200,200);
-  --shadow-color: rgb(50,50,70);
+  --primary-color: rgb(240,248,255);
+  --secondary-color: rgb(123,104,238);
+  --text-color: rgb(30,30,50);;
+  --shadow-color: rgb(106,90,205);
 
+  height: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
   color: var(--text-color);
+  overflow: auto;
+}
+.dark{
+  --primary-color: rgb(40,40,40);
+  --secondary-color: rgb(30,30,50);
+  --text-color: rgb(200,200,200);
+  --shadow-color: rgb(50,50,70);
 }
 
 .center{
@@ -36,7 +46,7 @@ body {
   justify-content: space-between;
 }
 
-button{
+button, .button{
   background-color: var(--secondary-color);
   color: var(--text-color);
   border: none;
@@ -47,12 +57,16 @@ button{
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-button:hover{
+button:hover, .button:hover{
   background-color: var(--text-color);
   color: var(--secondary-color);
 }
 
-button:active{
+button:active, .button:active{
   box-shadow: inset 1px 1px 1px 1px var(--secondary-color);
   /* color: var(--text-color); */
+}
+
+a.button{
+  text-decoration: none;
 }

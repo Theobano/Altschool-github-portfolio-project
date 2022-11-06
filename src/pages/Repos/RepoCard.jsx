@@ -6,7 +6,7 @@ function RepoCard(props) {
   return (
       <NavLink to={`/repos/${props.name}`}  className="repocard">
       <div>
-        <div className="horizontal-flex space-between repo_name_visib">
+        <div className="horizontal-flex space-between repo-name-visib">
           <span className="repo-name">{props.name}</span>
           <span className="repo-visibility">{props.visibility}</span>
         </div>

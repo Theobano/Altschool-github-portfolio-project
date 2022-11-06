@@ -6,7 +6,6 @@ function HamburgerButton() {
   const [navIsOpen, setNavIsOpen] = useContext(navigationContext);
   return (
     <button
-      id="main-hamburger"
       className={`hamburger-button ${navIsOpen ? "change-hamburger" : ""}`}
       onClick={() => {
         setNavIsOpen((prev) => !prev);

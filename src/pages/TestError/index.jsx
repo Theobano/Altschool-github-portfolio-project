@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./index.css";
 
 function TestError() {
@@ -8,7 +9,10 @@ function TestError() {
   }
 
   return (
-    <div className="center">
+      <div className="center">
+          <Helmet>
+        <title>Test Error - Theobano</title>
+      </Helmet>
       <div className="test-error">
         <h1>Test Error</h1>
         <button onClick={() => setError(true)}>Throw Error</button>

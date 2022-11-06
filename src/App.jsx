@@ -20,7 +20,7 @@ function App() {
 
   return (
     <userDataContext.Provider value={[userData, setUserData]}>
-      <div className="App">
+      <div id="App" className="App dark">
         <navigationContext.Provider value={[navIsOpen, setNavIsOpen]}>
           <NavBar />
           <NavigationDrawer />

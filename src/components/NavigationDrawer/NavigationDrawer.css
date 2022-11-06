@@ -6,6 +6,7 @@
   z-index: 50;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   transition: all 0.3s ease 0s;
   transform: translateX(-100%) translateY(0) rotate(0) skewX(0) skewY(0)
@@ -17,19 +18,6 @@
 
 }
 
-.navigation > ul {
-  list-style: none;
-  margin: 0;
-  padding: 2em 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 1em;
-}
-.navigation li {
-  width: 100%;
-}
 
 .navigation a {
   text-decoration: none;
@@ -45,9 +33,7 @@
   transition: all 0.3s ease 0s;
 }
 
-.navigation li:first-child a {
-  font-size: 1.5em;
-}
+
 
 .navigation a:hover {
   background-color: var(--primary-color);
@@ -56,6 +42,12 @@
 .navigation a.active{
   background-color: var(--shadow-color);
 
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
 }
 
 

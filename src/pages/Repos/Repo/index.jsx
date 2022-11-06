@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import ReactMarkdown from "react-markdown";
 import { useParams } from "react-router-dom";
 import rehypeRaw from "rehype-raw";
@@ -28,6 +29,9 @@ function Repo() {
 
   return (
     <div className="repo">
+      <Helmet>
+        <title>{repoName.repoName} - Theobano</title>
+      </Helmet>
       {isLoading ? (
         <Loader />
       ) : (

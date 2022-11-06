@@ -1,9 +1,24 @@
-.bio-container{
-    padding: 1em;
-    flex-direction: column;
-    gap: 1em;
+.home .container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.bio-container img{
-    border-radius: 50%;
+.bio-container {
+  padding: 1em;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.bio-container img {
+  border-radius: 50%;
+  max-width: 10em;
+  max-height: 10em;
+}
+
+.bio-container .name {
+  font-size: 1.8em;
+  font-weight: bold;
 }
